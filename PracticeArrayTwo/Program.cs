@@ -62,18 +62,27 @@ namespace PracticeArrayTwo
             numberListTwo.Add(89);
             numberListTwo.Count();
 
-            foreach(int number in numberListTwo)
+            foreach (int number in numberListTwo)
             {
                 Console.WriteLine(number);
             }
 
+
+
+
+            //Shelter Practice 
             Shelter shelter = new Shelter("Happy Place");
 
-            List<Shelter> listOfShelters = new List<Shelter>();//{shelter} is another way to add it all in one line;
+            List<Shelter> listOfShelters = new List<Shelter>() { shelter }; //{shelter} is another way to add it all in one line;
             listOfShelters.Add(shelter);
 
-            shelter.Name = "Someplace Nice";
+            shelter = new Shelter("Someplace Nice");
             listOfShelters.Add(shelter);
+
+            foreach(Shelter element in listOfShelters)
+            {
+                Console.WriteLine($"{element.Name} {element.SomeProperty}");
+            }
 
             Console.ReadLine();
 

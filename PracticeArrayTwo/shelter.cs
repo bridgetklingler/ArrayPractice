@@ -4,7 +4,17 @@ using System.Text;
 
 namespace PracticeArrayTwo
 {
-    class shelter
+    public class Shelter
     {
+        public string Name { get; set; }
+        public int SomeProperty { get; set; }
+
+        public Shelter(string name, int SomeProperty)
+        {
+            Name = name;
+            SomeProperty = 10;
+        }
+
+
     }
 }
